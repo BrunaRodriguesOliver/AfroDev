@@ -1780,6 +1780,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id buttonAbout
 id buttonGo
 id buttonPanel
 id cache_measures
@@ -2078,6 +2079,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtAbout
+id txtPokemon
 id txtTitlePokemon
 id unchecked
 id uniform
@@ -2237,6 +2239,7 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation nav_graph
 plurals mtrl_badge_content_description

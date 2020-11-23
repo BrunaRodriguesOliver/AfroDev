@@ -1,8 +1,10 @@
 package com.example.pokedexapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokedexapp.API.ApiClient
@@ -25,12 +27,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
-
+        //About
+        val btnAbout = findViewById<ImageButton>(R.id.buttonAbout)
+        btnAbout.setOnClickListener{
+            val intentPesquisa = Intent(this, AboutActivity::class.java )
+            startActivity(intentPesquisa)
+        }
 
         if (isInternetAviable()) {
             getPokeData()
         }
-
 
     }
   private fun getPokeData(){
@@ -62,6 +68,8 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
     }
+
+
 }
 
 

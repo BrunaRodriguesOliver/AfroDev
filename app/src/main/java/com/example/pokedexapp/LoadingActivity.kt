@@ -15,12 +15,12 @@ class LoadingActivity : AppCompatActivity() {
         setContentView(R.layout.activity_loading)
         supportActionBar?.hide()
 
+
         val rcbNome = findViewById<TextView>(R.id.rcbName)
         val nomeRecebido = intent.getStringExtra("edtName")
 
         rcbNome.text = nomeRecebido
         changeToMain()
-
     }
 
     fun changeToMain () {

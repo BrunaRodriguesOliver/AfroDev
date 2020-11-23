@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PokedexApp</string>
+    <string name="app_name">Pokedex</string>
     <string name="qual_se_nome">Qual seu nome?</string>
     <string name="nome">Nome</string>
     <string name="pokemon">Pokemon</string>

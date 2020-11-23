@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,6 @@ class LoginActivity : AppCompatActivity() {
         var nome = findViewById<EditText>(R.id.edtRecebeNome)
 
         btnEnvia.setOnClickListener {
-
 
             val intent = Intent(this, LoadingActivity::class.java)
             val parans = Bundle()
